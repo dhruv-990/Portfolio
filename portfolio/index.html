@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name — Portfolio</title>
+    <meta name="description" content="Portfolio of Your Name — developer and designer." />
+    <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/css/site.css" />
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-800 antialiased">
+    <a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-white text-slate-900 px-3 py-2 rounded shadow">Skip to content</a>
+
+    <header class="sticky top-0 z-50 bg-slate-50/70 backdrop-blur border-b border-slate-200">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <a href="#" class="font-extrabold tracking-tight text-xl">Your<span class="text-indigo-600">Name</span></a>
+          <nav class="hidden md:flex items-center gap-6 font-medium">
+            <a href="#about" class="hover:text-indigo-600">About</a>
+            <a href="#projects" class="hover:text-indigo-600">Projects</a>
+            <a href="#experience" class="hover:text-indigo-600">Experience</a>
+            <a href="#contact" class="hover:text-indigo-600">Contact</a>
+          </nav>
+          <div class="md:hidden">
+            <button id="mobileMenuButton" aria-expanded="false" aria-controls="mobileMenu" class="inline-flex items-center justify-center rounded-md p-2 text-slate-600 hover:bg-slate-200/60 focus:outline-none focus:ring-2 focus:ring-indigo-600">
+              <span class="sr-only">Open main menu</span>
+              <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200">
+        <nav class="px-4 py-3 space-y-2">
+          <a href="#about" class="block px-3 py-2 rounded hover:bg-slate-100">About</a>
+          <a href="#projects" class="block px-3 py-2 rounded hover:bg-slate-100">Projects</a>
+          <a href="#experience" class="block px-3 py-2 rounded hover:bg-slate-100">Experience</a>
+          <a href="#contact" class="block px-3 py-2 rounded hover:bg-slate-100">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="relative overflow-hidden">
+        <div class="absolute inset-0 -z-10 bg-gradient-to-b from-indigo-100 via-transparent to-transparent"></div>
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+          <div class="grid gap-10 lg:grid-cols-12 lg:gap-12 items-center">
+            <div class="lg:col-span-7">
+              <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900">Hi, I’m Your Name.<br class="hidden sm:block" /> I build modern web experiences.</h1>
+              <p class="mt-6 text-lg leading-8 text-slate-700">Full‑stack developer focused on delightful UX, performance, and accessibility. I enjoy turning complex problems into simple, beautiful interfaces.</p>
+              <div class="mt-8 flex gap-3">
+                <a href="#projects" class="inline-flex items-center justify-center rounded-md bg-indigo-600 px-5 py-3 text-white font-semibold shadow hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600">View Projects</a>
+                <a href="/assets/YourName-Resume.pdf" class="inline-flex items-center justify-center rounded-md bg-white px-5 py-3 text-slate-900 font-semibold shadow ring-1 ring-slate-200 hover:bg-slate-100 focus:outline-none focus:ring-2 focus:ring-indigo-600">Download Résumé</a>
+              </div>
+              <div class="mt-8 flex items-center gap-4 text-slate-600">
+                <a href="https://github.com/yourname" class="hover:text-slate-900" aria-label="GitHub">GitHub</a>
+                <a href="https://www.linkedin.com/in/yourname" class="hover:text-slate-900" aria-label="LinkedIn">LinkedIn</a>
+                <a href="mailto:you@example.com" class="hover:text-slate-900" aria-label="Email">Email</a>
+              </div>
+            </div>
+            <div class="lg:col-span-5 lg:pl-6">
+              <div class="relative mx-auto w-56 h-56 sm:w-64 sm:h-64 rounded-full overflow-hidden ring-4 ring-white shadow-lg">
+                <img src="/assets/img/avatar.svg" alt="Portrait of Your Name" class="object-cover w-full h-full" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="py-20 border-t border-slate-200">
+        <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 class="text-2xl font-bold tracking-tight text-slate-900">About</h2>
+          <p class="mt-4 text-slate-700">I’m a developer with a passion for product thinking and craftsmanship. I’ve shipped apps used by thousands and love collaborating with cross‑functional teams.</p>
+        </div>
+      </section>
+
+      <section id="projects" class="py-20 border-t border-slate-200">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex items-end justify-between">
+            <h2 class="text-2xl font-bold tracking-tight text-slate-900">Projects</h2>
+            <a href="#contact" class="text-indigo-600 hover:text-indigo-700 font-medium">Work with me →</a>
+          </div>
+          <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <!-- Project Card -->
+            <article class="group rounded-xl ring-1 ring-slate-200 bg-white p-5 hover:shadow transition">
+              <img src="/assets/img/project-1.jpg" alt="Screenshot of Project One" class="aspect-video w-full rounded-lg object-cover" />
+              <h3 class="mt-4 text-lg font-semibold text-slate-900">Project One</h3>
+              <p class="mt-1 text-sm text-slate-600">Brief description of the project, the stack, and your role.</p>
+              <div class="mt-3 flex gap-3 text-sm">
+                <span class="inline-flex items-center rounded-full bg-slate-100 px-2 py-1 text-slate-700">React</span>
+                <span class="inline-flex items-center rounded-full bg-slate-100 px-2 py-1 text-slate-700">TypeScript</span>
+                <span class="inline-flex items-center rounded-full bg-slate-100 px-2 py-1 text-slate-700">Node</span>
+              </div>
+              <div class="mt-4 flex gap-4 text-sm font-medium">
+                <a href="#" class="text-indigo-600 hover:text-indigo-700">Live</a>
+                <a href="#" class="text-slate-600 hover:text-slate-900">Source</a>
+              </div>
+            </article>
+            <!-- Repeat cards as needed -->
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="py-20 border-t border-slate-200">
+        <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 class="text-2xl font-bold tracking-tight text-slate-900">Experience</h2>
+          <ul class="mt-6 space-y-6">
+            <li class="rounded-xl ring-1 ring-slate-200 bg-white p-5">
+              <div class="flex items-center justify-between">
+                <p class="font-semibold">Company Name — Role</p>
+                <p class="text-sm text-slate-600">2023 — Present</p>
+              </div>
+              <p class="mt-2 text-slate-700">Short highlight of impact and responsibilities.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="py-20 border-t border-slate-200">
+        <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+          <h2 class="text-2xl font-bold tracking-tight text-slate-900">Contact</h2>
+          <form name="contact" class="mt-6 grid gap-4" netlify>
+            <label class="block">
+              <span class="text-sm font-medium">Name</span>
+              <input name="name" required class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" />
+            </label>
+            <label class="block">
+              <span class="text-sm font-medium">Email</span>
+              <input type="email" name="email" required class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" />
+            </label>
+            <label class="block">
+              <span class="text-sm font-medium">Message</span>
+              <textarea name="message" rows="5" required class="mt-1 block w-full rounded-md border-slate-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"></textarea>
+            </label>
+            <div class="flex items-center justify-between">
+              <p class="text-sm text-slate-600">Or email me at <a class="text-indigo-600" href="mailto:you@example.com">you@example.com</a></p>
+              <button type="submit" class="inline-flex items-center justify-center rounded-md bg-indigo-600 px-5 py-2.5 text-white font-semibold shadow hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-600">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 py-8">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between text-sm text-slate-600">
+        <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+        <a href="#" class="hover:text-slate-900">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="/assets/js/site.js"></script>
+  </body>
+</html>
